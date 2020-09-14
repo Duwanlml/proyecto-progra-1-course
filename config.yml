@@ -1,0 +1,16 @@
+title: proyecto progra 1
+description: proyecto progra 1
+template:
+  repo: proyecto-progra-1-template
+  name: proyecto-progra-1
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
